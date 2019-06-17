@@ -1,0 +1,7 @@
+after getting the json web tokens ecch time we request the server then we need to include the header while requesting the API 
+containing authorization key 
+  syntax:
+  Authorization : bearer [jwt_token]
+  example :
+   Authorization : bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+   eyJpZCI6IjVkMDc0MGU5OTY3ZmY2MDU0NGUyNjA2ZSIsImlhdCI6MTU2MDc2Mjg4OH0.sKpuVjUYSqz-LlrgnPSYhCcBU9y22c8_pJQf82bjD6c
