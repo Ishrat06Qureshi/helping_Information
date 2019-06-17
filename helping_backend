@@ -1,0 +1,7 @@
+jwt :
+
+download the jsonwebtoken package via npm i -S jsonwebtoken
+syntax: (payload , secretKey , expire_time)
+
+example :
+
