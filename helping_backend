@@ -5,3 +5,36 @@ syntax: (payload , secretKey , expire_time)
 
 example :
 
+ jwt.sign(
+                { id:user.id } , 
+                secretKey,
+                null,
+                (err , token ) => {
+                    if( err ) throw err;
+                    return res.json({
+                        token,
+                        user,
+                    })
+                })
+                
+                
+                
+bcrypt:
+ for hashing the password
+   bcrypt.genSalt(10,(err , salt)=>{
+        bcrypt.hash(newUser.password, salt,( err , hash) => {
+            if(err) throw err;
+            newUser.password = hash;
+            newUser.save().then( user => {
+               return res.json({ user })
+
+            })
+        })
+   })
+   
+for comparing the password:
+bcrypt.compare( password , user.password) .
+        then( isMatch => {
+            if(!isMatch){
+                return res.status(400).json({msg:" invalid password "});
+            }
