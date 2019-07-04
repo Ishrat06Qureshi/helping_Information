@@ -2,6 +2,13 @@ to align the items in the center
 
 
  flex:3,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+ flexDirection: 'column',
+ justifyContent: 'center',
+ alignItems: 'center',
+
+
+code for border 
+ borderBottomLeftRadius: 30,
+  borderBottomRightRadius: 30,
+  borderTopRightRadius: 30,
+  borderTopLeftRadius: 30,
