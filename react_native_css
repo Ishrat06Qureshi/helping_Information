@@ -1,0 +1,7 @@
+to align the items in the center 
+
+
+ flex:3,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
